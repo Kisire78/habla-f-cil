@@ -4,12 +4,10 @@ import heroBg from "@/assets/hero-bg.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      {/* Gradient overlay */}
       <div className="absolute inset-0" style={{ background: "var(--hero-gradient)" }} />
       <div className="absolute inset-0 bg-background/60" />
 
@@ -20,7 +18,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-muted-foreground tracking-[0.3em] uppercase text-sm mb-6 font-sans"
         >
-          Portafolio creativo
+          QA Engineer
         </motion.p>
 
         <motion.h1
@@ -29,8 +27,8 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none mb-6"
         >
-          Hola, soy{" "}
-          <span className="text-gradient">Tu Nombre</span>
+          Jose{" "}
+          <span className="text-gradient">Espinoza</span>
         </motion.h1>
 
         <motion.p
@@ -39,8 +37,8 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-secondary-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
         >
-          Desarrollador & Diseñador — Construyo experiencias digitales
-          que combinan forma y función.
+          Ingeniero en informática enfocado en QA, testing y automatización.
+          Experiencia práctica en pruebas funcionales, validación de APIs y automatización de procesos.
         </motion.p>
 
         <motion.div
@@ -56,15 +54,24 @@ const HeroSection = () => {
             Ver Proyectos
           </a>
           <a
-            href="#contacto"
+            href="https://www.linkedin.com/in/josue-espinoza-a05a53324/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-border text-foreground font-display font-medium hover:bg-secondary transition-all"
           >
-            Contáctame
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/Kisire78"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-border text-foreground font-display font-medium hover:bg-secondary transition-all"
+          >
+            GitHub
           </a>
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
