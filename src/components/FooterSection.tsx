@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const socials = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "mailto:tu@email.com", label: "Email" },
+  { icon: Github, href: "https://github.com/Kisire78", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/josue-espinoza-a05a53324/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:ksre78@gmail.com", label: "Email" },
 ];
 
 const FooterSection = () => {
@@ -22,12 +21,12 @@ const FooterSection = () => {
             ¿Trabajamos juntos?
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto mb-8">
-            Siempre estoy abierto a nuevos proyectos e ideas interesantes.
+            Siempre estoy abierto a nuevas oportunidades en QA.
             ¡No dudes en contactarme!
           </p>
 
           <a
-            href="mailto:tu@email.com"
+            href="mailto:ksre78@gmail.com"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-display font-semibold tracking-wide hover:brightness-110 transition-all mb-10"
           >
             Enviar Mensaje
@@ -38,6 +37,8 @@ const FooterSection = () => {
               <a
                 key={s.label}
                 href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={s.label}
                 className="w-11 h-11 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
               >
@@ -47,7 +48,7 @@ const FooterSection = () => {
           </div>
 
           <p className="text-muted-foreground text-xs tracking-wide">
-            © {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.
+            © {new Date().getFullYear()} Jose Espinoza. Todos los derechos reservados.
           </p>
         </motion.div>
       </div>
