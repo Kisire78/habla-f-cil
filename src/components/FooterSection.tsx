@@ -26,7 +26,9 @@ const FooterSection = () => {
           </p>
 
           <a
-            href="mailto:ksre78@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=ksre78@gmail.com&su=Contacto%20desde%20portafolio"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-display font-semibold tracking-wide hover:brightness-110 transition-all mb-10"
           >
             Enviar Mensaje
