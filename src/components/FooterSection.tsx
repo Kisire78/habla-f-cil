@@ -48,7 +48,7 @@ const FooterSection = () => {
           </div>
 
           <p className="text-muted-foreground text-xs tracking-wide">
-            © {new Date().getFullYear()} Jose Espinoza. Todos los derechos reservados.
+            © {new Date().getFullYear()} Josue Espinoza. Todos los derechos reservados.
           </p>
         </motion.div>
       </div>

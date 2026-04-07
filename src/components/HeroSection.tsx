@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none mb-6"
         >
-          Jose{" "}
+          Josue{" "}
           <span className="text-gradient">Espinoza</span>
         </motion.h1>
 
