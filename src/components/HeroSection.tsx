@@ -18,7 +18,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-muted-foreground tracking-[0.3em] uppercase text-sm mb-6 font-sans"
         >
-          QA Engineer
+          Analista de Datos & QA
         </motion.p>
 
         <motion.h1
@@ -37,8 +37,8 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-secondary-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light"
         >
-          Ingeniero en informática enfocado en QA, testing y automatización.
-          Experiencia práctica en pruebas funcionales, validación de APIs y automatización de procesos.
+          Ingeniero en Informática con enfoque en análisis de datos, validación de información y aseguramiento de calidad.
+          Experiencia en SQL, automatización de procesos y control de integridad de datos.
         </motion.p>
 
         <motion.div
