@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 interface Project {
   title: string;
@@ -11,35 +11,35 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Automatización con Python y Shodan",
-    description: "Problema: Búsqueda manual repetitiva de información técnica. Solución: Script automatizado que consulta APIs y guarda resultados.",
+    title: "Automatización y Análisis con Python",
+    description: "Script automatizado que consulta APIs, procesa datos y almacena resultados en base de datos para análisis posterior.",
     details: [
-      "Integración con API",
-      "Almacenamiento en base de datos",
-      "Alertas por Telegram",
+      "Integración con APIs y procesamiento de datos",
+      "Almacenamiento estructurado en MySQL",
+      "Alertas automáticas por Telegram",
     ],
-    tags: ["Python", "API", "MySQL", "Automatización"],
+    tags: ["Python", "API", "MySQL", "Automatización", "Datos"],
     repoUrl: "https://github.com/Kisire78",
   },
   {
-    title: "Testing de APIs con Postman",
-    description: "Objetivo: Validar endpoints y comportamiento de servicios REST.",
+    title: "Validación de Datos en APIs REST",
+    description: "Validación de endpoints, consistencia de respuestas y calidad de datos entregados por servicios REST.",
     details: [
-      "Pruebas funcionales",
-      "Validación de respuestas",
-      "Organización de colecciones",
+      "Verificación de integridad de datos",
+      "Validación de formatos y tipos de respuesta",
+      "Documentación de inconsistencias encontradas",
     ],
-    tags: ["Postman", "Testing API", "QA"],
+    tags: ["Postman", "SQL", "Validación de Datos", "API"],
   },
   {
-    title: "Testing de sitio web",
-    description: "Enfoque: Validación de funcionalidades y experiencia de usuario.",
+    title: "Control de Calidad de Información",
+    description: "Análisis y validación de datos en sistemas, asegurando consistencia e integridad de la información.",
     details: [
-      "Casos de prueba",
-      "Detección de bugs",
-      "Mejoras UX",
+      "Detección de datos duplicados e inconsistentes",
+      "Propuestas de mejora en flujos de datos",
+      "Reportes de calidad de información",
     ],
-    tags: ["Testing Manual", "UX", "QA"],
+    tags: ["SQL", "Análisis", "QA de Datos", "Excel"],
   },
 ];
 
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
         >
           <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3 font-sans">Portafolio</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold">
-            Proyectos QA
+            Proyectos
           </h2>
         </motion.div>
 

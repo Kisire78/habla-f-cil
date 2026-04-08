@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Bug, FlaskConical, Brain, Search, Database, Terminal } from "lucide-react";
+import { Database, Search, Brain, Terminal, BarChart3, ShieldCheck } from "lucide-react";
 
 const skills = [
-  { icon: Terminal, title: "Python", description: "Automatización de procesos y scripts de testing." },
-  { icon: FlaskConical, title: "Postman", description: "Pruebas de APIs, validación de endpoints y colecciones." },
-  { icon: Database, title: "SQL", description: "Consultas y validación de datos en bases de datos." },
-  { icon: Search, title: "Testing Manual", description: "Casos de prueba, detección de bugs y mejoras UX." },
-  { icon: Bug, title: "QA Mindset", description: "Análisis, reproducción de errores y propuestas de mejora." },
-  { icon: Brain, title: "Automatización", description: "Scripts automatizados, integración con APIs y alertas." },
+  { icon: Database, title: "SQL", description: "Consultas JOIN, validación y análisis de datos en bases relacionales." },
+  { icon: BarChart3, title: "Análisis de Datos", description: "Interpretación de información, detección de patrones e inconsistencias." },
+  { icon: Terminal, title: "Python", description: "Automatización de procesos, scripts de monitoreo y validación." },
+  { icon: Search, title: "Validación de Datos", description: "Control de calidad, integridad y consistencia de información." },
+  { icon: ShieldCheck, title: "QA & Testing", description: "Pruebas funcionales, testing de APIs y detección de errores." },
+  { icon: Brain, title: "Flujos ETL", description: "Comprensión de procesos de extracción, transformación y carga de datos." },
 ];
 
 const AboutSection = () => {
@@ -23,38 +23,40 @@ const AboutSection = () => {
           >
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3 font-sans">Sobre mí</p>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Calidad de software
+              Datos & Calidad
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Me especializo en identificar errores, validar funcionalidades y mejorar la calidad del software.
-              He desarrollado proyectos donde aplico testing manual, pruebas de APIs con Postman y automatización con Python.
+              Ingeniero en Informática con enfoque en análisis y gestión de datos. Tengo experiencia práctica en SQL, 
+              validación de información y control de calidad de datos, adquirida durante mi práctica profesional en Banco Coopeuch.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Busco mi primera oportunidad profesional en QA donde pueda aportar con análisis, detalle y mejora continua.
+              He trabajado en entornos donde es clave asegurar la consistencia, integridad y correcto flujo de la información, 
+              combinando habilidades de análisis de datos con una mirada rigurosa de QA orientada a resultados.
             </p>
 
             <div className="p-5 rounded-xl bg-card border border-border">
-              <h3 className="font-display font-semibold text-lg mb-3">Evidencia QA</h3>
+              <h3 className="font-display font-semibold text-lg mb-3">Experiencia Práctica — Banco Coopeuch</h3>
               <p className="text-muted-foreground text-sm mb-3">
-                Durante mis pruebas he identificado errores relacionados a:
+                Práctica profesional en Gestión de Identidades y Seguridad TI:
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  Error en validación de campos obligatorios
+                  Gestión y validación de datos de usuarios en múltiples sistemas
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  Respuesta inconsistente en endpoint
+                  Análisis de flujos de acceso y detección de inconsistencias
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  Problemas de usabilidad en navegación
+                  Automatización de procesos de monitoreo y validación
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                  Implementación de alertas automáticas para detección de incidentes
                 </li>
               </ul>
-              <p className="text-xs text-muted-foreground mt-3 italic">
-                Enfoque: análisis, reproducción del error y propuesta de mejora.
-              </p>
             </div>
           </motion.div>
 
